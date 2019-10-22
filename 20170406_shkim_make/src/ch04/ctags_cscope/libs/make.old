@@ -1,0 +1,23 @@
+##
+##		Kim Soo Hyun(@")
+##
+include .config
+
+PLATFORM = 
+CC = $(PLATFORM)gcc
+
+all : 
+	cd libtest; make CC=$(CC)
+	cp libtest/libtest.* .
+
+distclean: clobber
+mrproper: clobber
+clobber: 
+	-cd libtest; make clobber
+	-rm -f libtest.*
+	-rm -f .config
+
+clean :
+	-cd libtest; make clean
+	-rm -f libtest.*
+

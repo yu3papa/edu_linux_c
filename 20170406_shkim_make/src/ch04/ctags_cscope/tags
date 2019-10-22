@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP	prj1/src/Make.mk	/^APP = app1$/;"	m
+APP	prj2/src/Make.mk	/^APP = app2$/;"	m
+APP_ALL	prj1/src/Make.mk	/^APP_ALL = $(APP)_static $(APP)_shared$/;"	m
+APP_ALL	prj2/src/Make.mk	/^APP_ALL = $(APP)_static $(APP)_shared$/;"	m
+ARFLAGS	libs/libtest/Make.mk	/^ARFLAGS = rcs$/;"	m
+ARFLAGS	libs/libtest/libShared/makefile	/^ARFLAGS = rcs$/;"	m
+ARFLAGS	libs/libtest/libStatic/makefile	/^ARFLAGS = rcs$/;"	m
+C	makefile	/^	cd libs\/libtest; make CC=$(CC)$/;"	m
+C	makefile	/^	cd prj1; make CC=$(CC)$/;"	m
+C	makefile	/^	cd prj2; make CC=$(CC)$/;"	m
+CC	libs/libtest/Make.mk	/^CC = $(PLATFORM)gcc$/;"	m
+CC	libs/libtest/libShared/makefile	/^CC = $(PLATFORM)gcc$/;"	m
+CC	libs/libtest/libStatic/makefile	/^CC = $(PLATFORM)gcc$/;"	m
+CC	libs/makefile	/^CC = $(PLATFORM)gcc$/;"	m
+CC	makefile	/^CC = $(PLATFORM)gcc$/;"	m
+CC	prj1/makefile	/^CC = $(PLATFORM)gcc$/;"	m
+CC	prj1/src/Make.mk	/^CC = $(PLATFORM)gcc$/;"	m
+CC	prj2/makefile	/^CC = $(PLATFORM)gcc$/;"	m
+CC	prj2/src/Make.mk	/^CC = $(PLATFORM)gcc$/;"	m
+CFLAGS	libs/libtest/Make.mk	/^CFLAGS = -fPIC -O2 -Wall -g$/;"	m
+CFLAGS	libs/libtest/libShared/makefile	/^CFLAGS = -fPIC -Wall -O2 -g$/;"	m
+CFLAGS	libs/libtest/libStatic/makefile	/^CFLAGS = -fPIC -Wall -O2 -g$/;"	m
+CFLAGS	prj1/src/Make.mk	/^CFLAGS = -O2 -Wall -g -I$(INC_PATH)$/;"	m
+CFLAGS	prj2/src/Make.mk	/^CFLAGS = -O2 -Wall -g -I$(INC_PATH)$/;"	m
+INC_PATH	prj1/src/Make.mk	/^INC_PATH = $(VPATH)include$/;"	m
+INC_PATH	prj2/src/Make.mk	/^INC_PATH = $(VPATH)include$/;"	m
+LDFLAGS	libs/libtest/Make.mk	/^LDFLAGS = -shared -Wl,-soname,$(LIB_OUT)$/;"	m
+LDFLAGS	libs/libtest/libShared/makefile	/^LDFLAGS = -shared -Wl,-soname,$(LIB_OUT)$/;"	m
+LIB_OBJS	libs/libtest/libShared/makefile	/^LIB_OBJS = min.o max.o$/;"	m
+LIB_OBJS	libs/libtest/libStatic/makefile	/^LIB_OBJS = min.o max.o$/;"	m
+LIB_OUT	libs/libtest/libShared/makefile	/^LIB_OUT = libtest.so$/;"	m
+LIB_OUT	libs/libtest/libStatic/makefile	/^LIB_OUT = libtest.a$/;"	m
+LIB_PATH	prj1/src/Make.mk	/^$(APP)_shared : LIB_PATH = $(VPATH)libs\/libtest\/libShared$/;"	m
+LIB_PATH	prj1/src/Make.mk	/^$(APP)_static : LIB_PATH = $(VPATH)libs\/libtest\/libStatic$/;"	m
+LIB_PATH	prj2/src/Make.mk	/^$(APP)_shared : LIB_PATH = $(VPATH)libs\/libtest\/libShared$/;"	m
+LIB_PATH	prj2/src/Make.mk	/^$(APP)_static : LIB_PATH = $(VPATH)libs\/libtest\/libStatic$/;"	m
+LIB_SHARED	libs/libtest/Make.mk	/^LIB_SHARED = libtest.so$/;"	m
+LIB_STATIC	libs/libtest/Make.mk	/^LIB_STATIC = libtest.a$/;"	m
+NO1	prj1/src/b.h	1;"	d
+NO1	prj2/src/b.h	1;"	d
+NO2	prj1/src/c.h	1;"	d
+NO2	prj2/src/c.h	1;"	d
+OBJS	libs/libtest/Make.mk	/^OBJS = $(SRCS:.c=.o)$/;"	m
+OBJS	prj1/src/Make.mk	/^OBJS = $(SRCS:.c=.o)$/;"	m
+OBJS	prj2/src/Make.mk	/^OBJS = $(SRCS:.c=.o)$/;"	m
+PLATFORM	libs/libtest/Make.mk	/^PLATFORM = $/;"	m
+PLATFORM	libs/libtest/libShared/makefile	/^PLATFORM = $/;"	m
+PLATFORM	libs/libtest/libStatic/makefile	/^PLATFORM = $/;"	m
+PLATFORM	libs/makefile	/^PLATFORM = $/;"	m
+PLATFORM	makefile	/^PLATFORM = $/;"	m
+PLATFORM	prj1/makefile	/^PLATFORM = $/;"	m
+PLATFORM	prj1/src/Make.mk	/^PLATFORM = $/;"	m
+PLATFORM	prj2/makefile	/^PLATFORM = $/;"	m
+PLATFORM	prj2/src/Make.mk	/^PLATFORM = $/;"	m
+SRCS	libs/libtest/Make.mk	/^SRCS = min.c max.c$/;"	m
+SRCS	prj1/src/Make.mk	/^SRCS = test1.c test2.c test3.c$/;"	m
+SRCS	prj2/src/Make.mk	/^SRCS = test21.c test22.c test23.c$/;"	m
+VPATH	libs/libtest/libShared/makefile	/^VPATH = ..\/libSrc$/;"	m
+VPATH	libs/libtest/libStatic/makefile	/^VPATH = ..\/libSrc$/;"	m
+VPATH	prj1/src/Make.mk	/^VPATH = ..\/..\/$/;"	m
+VPATH	prj2/src/Make.mk	/^VPATH = ..\/..\/$/;"	m
+func1	prj1/src/test2.c	/^void func1()$/;"	f
+func1	prj2/src/test22.c	/^void func1()$/;"	f
+func2	prj1/src/test3.c	/^void func2()$/;"	f
+func2	prj2/src/test23.c	/^void func2()$/;"	f
+main	prj1/src/test1.c	/^int main(void)$/;"	f
+main	prj2/src/test21.c	/^int main(void)$/;"	f
+max	libs/libtest/max.c	/^int max(int a, int b)$/;"	f
+min	libs/libtest/min.c	/^int min(int a, int b)$/;"	f

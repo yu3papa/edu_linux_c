@@ -1,0 +1,3 @@
+#!/bin/bash
+cp .config_app prj1/.config
+cd prj1; ./configure

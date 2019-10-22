@@ -1,0 +1,3 @@
+#!/bin/bash
+cp .config libtest/.config
+cd libtest; ./configure

@@ -1,0 +1,2 @@
+#!/bin/bash
+cp .config_lib libs/.config; cd libs; ./configure
