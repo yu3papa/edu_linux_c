@@ -1,0 +1,21 @@
+#! /bin/sh
+#
+# Created by configure
+
+"/data/gitLocalRepo/edu_linux_c/httpd-2.4.41/srclib/apr-util/configure" \
+"--disable-option-checking" \
+"--enable-module=so" \
+"--enable-mods-shared=all" \
+"--enable-so" \
+"--enable-deflate" \
+"--enable-rewrite" \
+"--with-included-apr" \
+"--cache-file=/dev/null" \
+"--srcdir=/data/gitLocalRepo/edu_linux_c/httpd-2.4.41/srclib/apr-util" \
+"--with-apr=../apr" \
+"--prefix=/data/app/httpd" \
+"--exec-prefix=/data/app/httpd" \
+"--libdir=/data/app/httpd/lib" \
+"--includedir=/data/app/httpd/include" \
+"--bindir=/data/app/httpd/bin" \
+"$@"

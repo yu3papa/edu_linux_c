@@ -1,0 +1,13 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--prefix=/data/app/httpd" \
+"--enable-module=so" \
+"--enable-mods-shared=all" \
+"--enable-so" \
+"--enable-deflate" \
+"--enable-rewrite" \
+"--with-included-apr" \
+"$@"
