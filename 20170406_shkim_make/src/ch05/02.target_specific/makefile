@@ -20,7 +20,7 @@ task2 : task2.o
 	$(CC) $(LDFLAGS) -o $@ $<
 
 lib/%.o : CFLAGS = -fPIC -O2 -Wall -g
-
+ 
 clean:
 	-rm -f lib/*.o
 	-rm $(APP_OUT) $(APP_OBJ) $(LIB_OUT) 

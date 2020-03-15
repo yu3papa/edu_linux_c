@@ -9,6 +9,4 @@ check2 : tmp/file
 
 clean :
 	rm check1 check1.bak
-
-
-
+	

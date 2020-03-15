@@ -1,18 +1,26 @@
+#OBJS = test1.o test2.o test3.o
+#CC = gcc
+#CFLAGS = -c -g -Wall -O2
+#
+#test: $(OBJS)
+#	$(CC) -o $@ $(OBJS)
+#test1.o: test1.c
+#	$(CC) $(CFLAGS) $<
+#test2.o: test2.c
+#	$(CC) $(CFLAGS) $?
+#test3.o: test3.c
+#	$(CC) $(CFLAGS) $*.c
+#clean:
+#	rm -fr test $(OBJS)
+
+
 OBJS = test1.o test2.o test3.o
 CC = gcc
 CFLAGS = -c -g -Wall -O2
 
 test: $(OBJS)
-	$(CC) -o $@ $(OBJS)
-
-test1.o: test1.c a.h b.h
+	$(CC) -o $@ $^
+.c.o:
 	$(CC) $(CFLAGS) $<
-
-test2.o: test2.c a.h c.h
-	$(CC) $(CFLAGS) $?
-
-test3.o: test3.c a.h b.h c.h
-	$(CC) $(CFLAGS) $*.c
-
 clean:
 	rm -fr test $(OBJS)

@@ -10,14 +10,11 @@ test: $(OBJS)
 	$(CC) -o $@ $^
 
 info:
-	@echo "SRCS-->"
-	@echo $(SRCS)
-	@echo "OBJS-->"
-	@echo $(OBJS)
-	@echo "OBJS1-->"
-	@echo $(OBJS1)
-	@echo "OBJS2-->"
-	@echo $(OBJS2)
+	@echo "SRCS --> $(SRCS)"
+	@echo "OBJS --> $(OBJS)"
+	@echo "OBJS1--> $(OBJS1)"
+	@echo "OBJS2--> $(OBJS2)"
+	
 clean:
 	rm $(OBJS) test
 
